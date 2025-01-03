@@ -7,7 +7,7 @@
     <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>Charity Jet | Thank You</title>
+    <title>Helping Hands | Thank You</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
@@ -21,7 +21,7 @@
     <!-- ----------------------------------------NAVBAR----------------------------------------------------->
     <nav class="nav nav_top">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" width="250"></a>
+            <a class='logos' href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" width="250"></a>
         </div>
         <div class="nav_side">
             <a href="{% url 'home' %}">HOME</a>
@@ -44,8 +44,8 @@
     <!-- --------------------------------------------FOOTER-------------------------------------------------------->
     <footer>
         <div class="pages"> 
-            <a href="index.html"><img class="aimg" src="images/logo.png" width="250"></a> 
-            <p>Charity Jet cares for needy children by empowering their caregivers to do their best work, with compassion, grace, integrity and excellence. Our end goal is to support children worldwide and see every child reach the potential that God has for them.</p>
+            <a href="index.html"><img class="aimg" src="{% static 'images/logo.png' %}" width="250"></a> 
+            <p>Healing Hands provides care for lung cancer patients by empowering their caregivers with compassion, integrity, and excellence. Our mission is to support individuals impacted by lung cancer, ensuring they receive the care and support needed to reach their fullest potential and live with hope and dignity.</p>
             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -60,19 +60,19 @@
         </div>
         <div class="contact">
             <h3>Contact Us</h3>
-            <a href="contact" target="_blank">4486 Richards Avenue, Modesto CA - 95354</a>
-            <a href="tel: +910000000000">200-000-0000</a>
-            <a href="mailto: ppppppp@gmail.com">charityjet@gmail.com</a>
+            <a href="contact">802 Central st,<br> Water Valley MS - 38965</a>
+            <a href="tel: +910000000000">662-200-7815</a>
+            <a href="mailto: ppppppp@gmail.com">healinghands@gmail.com</a>
         </div>
         <div class="social">
             <h3>Support</h3>
-            <p>Help us shape a better future fot children all over the world</p>
+            <p>Join us in building hope and a brighter future for those battling lung cancer.</p>
             <div class="side_btn">
                 <a href="{% url 'donate' %}">JOIN US TODAY</a>
             </div>
         </div>
         <hr>
-        <p>Copyright &copy; 2021 Charity Jet. All rights reserved.</p>
+        <p>Copyright &copy; 2025 Healing Hands. All rights reserved.</p>
     </footer>
 </body>
 </html>

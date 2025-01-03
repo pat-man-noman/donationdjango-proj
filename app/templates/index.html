@@ -6,10 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>Charity Jet</title>
-
+    <title>Helping Hands</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -22,7 +21,7 @@
     <!-- ----------------------------------------NAVBAR----------------------------------------------------->
     <nav class="nav nav_top">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" width="250"></a>
+            <a class='logos' href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" width="250"></a>
         </div>
         <div class="nav_side">
             <a href="{% url 'home' %}">HOME</a>
@@ -36,25 +35,25 @@
         <div class="main_content">
             <h2>“Giving is not just about making a donation. It is about making a difference.”
                 <br>
-                <span>Give a helping hand to children who NEED it!</span>
+                <span>Extend a lifeline to those battling lung cancer!</span>
             </h2>
             <div class="btn">
-                <a href="donate.html">DONATE NOW</a>
+                <a href="{% url 'donate' %}">DONATE NOW</a>
             </div>
         </div>
     </div>
     <!-- --------------------------------------------SIDE----------------------------------------------------------->
     <div class="side">
         <div class="left">
-            <img src="images/side.jpg">
+            <img src="{% static 'images/Female-Patient.jpg' %}">
         </div>
         <div class="right">
-            <h2>HELP A CHILD TODAY</h2>
+            <h2>BRING HOPE TODAY</h2>
             <p>
-                Service to man is service to God. Charity Jet cares for needy children by empowering their caregivers to do their best work, with compassion, grace, integrity and excellence. Our end goal is to support children worldwide and see every child reach the potential that God has for them.
+                Service to humanity is service to God. Healing Hands is dedicated to supporting individuals affected by lung cancer by empowering caregivers to provide compassionate, dignified, and excellent care. Our ultimate goal is to bring hope and healing to those in need, helping each person live with strength and fulfill their God-given potential.
             </p>
             <div class="side_btn">
-                <a href="donate.html">JOIN US TODAY</a>
+                <a href="{% url 'donate' %}">JOIN US TODAY</a>
             </div>
         </div>
 
@@ -66,33 +65,30 @@
 
             <div class="item">
                 <div class="item_img">
-                    <img src="images/pro1.svg">
                 </div>
                 <div class="item_content">
-                    <h3>Pure Food & Water</h3><br>
-                    <p>We supply needy childen with basic necessities like pure food and water</p>
+                    <h3>Supporting Early Detection</h3><br>
+                    <p>Supporting Early Detection helps fund research and screenings to catch lung cancer early, increasing survival rates for all ages.</p>
                     <br><br><br>
                 </div>
             </div>
 
             <div class="item">
                 <div class="item_img">
-                    <img src="images/pro2.svg">
                 </div>
                 <div class="item_content">
-                    <h3>Health and Medicine</h3><br>
-                    <p>Health being the foremost priority, we aim at giving children every medical support</p>
+                    <h3>Advancing New Treatments</h3><br>
+                    <p>Advancing Research for New Treatments funds innovative therapies to improve outcomes and offer hope to lung cancer patients.</p>
                     <br><br>
                 </div>
             </div>
 
             <div class="item">
                 <div class="item_img">
-                    <img src="images/pro3.svg">
                 </div>
                 <div class="item_content">
-                    <h3>Education</h3><br>
-                    <p>We provide education facilities to children all over the world</p>
+                    <h3>Accelerating Clinical Trials</h3><br>
+                    <p>Accelerating Clinical Trials for Lung Cancer speeds up research and treatment breakthroughs, bringing hope to patients and improving outcomes.</p>
                     <br><br>
                 </div>
             </div>
@@ -102,8 +98,8 @@
     <!-- --------------------------------------------FOOTER-------------------------------------------------------->
     <footer>
         <div class="pages"> 
-            <a href="index.html"><img class="aimg" src="images/logo.png" width="250"></a> 
-            <p>Charity Jet cares for needy children by empowering their caregivers to do their best work, with compassion, grace, integrity and excellence. Our end goal is to support children worldwide and see every child reach the potential that God has for them.</p>
+            <a href="index.html"><img class="aimg" src="{% static 'images/logo.png' %}" width="250"></a> 
+            <p>Healing Hands provides care for lung cancer patients by empowering their caregivers with compassion, integrity, and excellence. Our mission is to support individuals impacted by lung cancer, ensuring they receive the care and support needed to reach their fullest potential and live with hope and dignity.</p>
             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -118,19 +114,19 @@
         </div>
         <div class="contact">
             <h3>Contact Us</h3>
-            <a href="contact" target="_blank">4486 Richards Avenue, Modesto CA - 95354</a>
-            <a href="tel: +910000000000">200-000-0000</a>
-            <a href="mailto: ppppppp@gmail.com">charityjet@gmail.com</a>
+            <a href="contact" >802 Central st,<br> Water Valley MS - 38965</a>
+            <a href="tel: +910000000000">662-200-7815</a>
+            <a href="mailto: ppppppp@gmail.com">healinghands@gmail.com</a>
         </div>
         <div class="social">
             <h3>Support</h3>
-            <p>Help us shape a better future fot children all over the world</p>
+            <p>Join us in building hope and a brighter future for those battling lung cancer.</p>
             <div class="side_btn">
                 <a href="{% url 'donate' %}">JOIN US TODAY</a>
             </div>
         </div>
         <hr>
-        <p>Copyright &copy; 2021 Charity Jet. All rights reserved.</p>
+        <p>Copyright &copy; 2025 Healing Hands. All rights reserved.</p>
     </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
