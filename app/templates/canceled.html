@@ -26,28 +26,24 @@
       <div class="sr-content">
         <div class="pasha-image-stack">
           <img
-            src="https://picsum.photos/280/320?random=1"
+            src="{% static 'images/cancc.jpg' %}"
             width="140"
             height="160"
           />
           <img
-            src="https://picsum.photos/280/320?random=2"
+            src="{% static 'images/canc2.jpg' %}"
             width="140"
             height="160"
           />
           <img
-            src="https://picsum.photos/280/320?random=3"
-            width="140"
-            height="160"
-          />
-          <img
-            src="https://picsum.photos/280/320?random=4"
+            src="{% static 'images/canc3.jpg' %}"
             width="140"
             height="160"
           />
         </div>
       </div>
     </div>
+    <a class="re" href="{% url 'home' %}">HOME</a>
     <script>
       var urlParams = new URLSearchParams(window.location.search);
 

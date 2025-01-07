@@ -12,7 +12,11 @@
     --radius: 6px;
     --form-width: 650px;
   }
-  
+  .re{
+    font-size: 25pt;
+    font-weight: bolder;
+    color: white;
+  }
   /* Base */
   * {
     box-sizing: border-box;
@@ -22,6 +26,7 @@
     font-size: 16px;
     color: var(--body-color);
     -webkit-font-smoothing: antialiased;
+    background-color: #225755;
   }
   h1,
   h2,
@@ -29,13 +34,13 @@
   h4,
   h5,
   h6 {
-    color: var(--body-color);
+    color: #10a8f7;
     margin-top: 2px;
     margin-bottom: 4px;
   }
   h1 {
     font-size: 27px;
-    color: var(--headline-color);
+    color: #10a8f7;
   }
   h4 {
     font-weight: 500;
@@ -265,7 +270,7 @@
   
   /* Buttons and links */
   button {
-    background: var(--accent-color);
+    background: #14f18c;
     border-radius: var(--radius);
     color: white;
     border: 0;
