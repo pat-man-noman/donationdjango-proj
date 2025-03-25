@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -48,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -126,3 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STRIPE_TEST_SECRET_KEY = "sk_test_51Qc7F6FdYIKcNkBIyzoag1jC9Yk0MP2pqWGvkbpjTFciLkLrybnMiNFMfO2c3aAnFLfr8pndLV7ndwlRhXCMVOIh00sb9oPmPf"
 
 STRIPE_TEST_PUBLISHABLE_KEY = "pk_test_51Qc7F6FdYIKcNkBI7Mp4WQNS04kZEO6rVcCqbxP81JSlrlS9H6CHq3f02CbU7O1mAXGmBUSeMcMB0UI0vMJheb7500gloxr261"
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
