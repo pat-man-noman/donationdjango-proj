@@ -32,15 +32,16 @@ body
 }
 .nav_side
 {
-    float:right;
-    width:45%;
+    float: right;
+    width: 45%;
     margin-top: 20px;
+    align-items: end;
+    text-align: right;
 }
 .nav_side a
 {
     text-decoration: none;
     margin-right: 15px;
-    margin-left:50px;
     margin-top: 20px;
     padding-top: 20px;
     padding-left: 15px;
