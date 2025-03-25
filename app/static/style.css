@@ -245,6 +245,7 @@ body
     font-size: 25px;
     color: rgb(79, 255, 88);
     font-weight: bolder;
+    margin-top: 35px;
 }
 .product .product_container .item .item_content p
 {
